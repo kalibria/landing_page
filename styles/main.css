@@ -5,6 +5,7 @@
     background-image: url('../images/Background.png');
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .webDeveloper__name {
@@ -60,6 +61,41 @@
 
 .button--outlined {
     background-color: transparent;
+}
+
+.burgerMenu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.burgerMenu {
+    width: 36px;
+    height: 3px;
+    background-color: rgba(21, 24, 18, 1);
+    position: relative;
+}
+
+.burgerMenu::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgba(21, 24, 18, 1);
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+
+.burgerMenu::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgba(21, 24, 18, 1);
+    position: absolute;
+    top: 6px;
+    right: 0;
 }
 
 @media screen and (min-width: 321px) {
