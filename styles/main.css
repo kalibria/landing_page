@@ -1,8 +1,9 @@
 .webDeveloper {
-    height: 640px;
     background-position: 58%;
     width: 100vw;
+    height: 100vh;
     background-image: url('../images/Background.png');
+    background-size: cover;
     display: flex;
     align-items: center;
     position: relative;
@@ -98,6 +99,7 @@
     right: 0;
 }
 
+
 @media screen and (min-width: 321px) {
     .webDeveloper {
         height: 800px;
@@ -108,6 +110,33 @@
         font-size: 48px;
         font-weight: 700;
         line-height: 60px;
+    }
+
+    .content-container {
+        position: relative;
+
+    }
+
+    .content-container::before,
+    .content-container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        top: 0;
+        z-index: 1;
+    }
+
+    .content-container::before {
+        left: 50%;
+        transform: translateX(-570px);
+    }
+
+    .content-container::after {
+        left: 50%;
+        transform: translateX(570px);
     }
 
 }
