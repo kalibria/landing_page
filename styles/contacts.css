@@ -46,6 +46,7 @@
 .input-container {
     position: relative;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .textarea__input {
@@ -79,4 +80,48 @@
 .form {
     display: flex;
     flex-direction: column;
+}
+
+.image-container {
+    display: none;
+}
+
+@media (min-width: 320px) {
+    .contacts__content-container {
+        border-top: none;
+        display: flex;
+        padding-left: 52px;
+        align-items: flex-start;
+        justify-content: normal;
+    }
+
+    .contacts__description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contacts_subtitle::after {
+        margin-top: 30px;
+    }
+
+    .image-container {
+        display: block;
+        margin-right: 68px;
+    }
+
+    .inputs--connected {
+        display: flex;
+        gap: 15px;
+    }
+
+    .contacts-container {
+        flex-grow: 1;
+    }
+
+    .checkbox-container {
+        display: none;
+    }
+    .submit__button {
+        align-self: normal;
+    }
 }
