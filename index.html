@@ -22,7 +22,7 @@
         <div class="socialNetworks">
             <p>Социальные сети</p>
             <div class="socialNetworks__icons">
-                <a href="#">
+                <a href="https://github.com/" target="_blank">
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
                          style="transform: rotate(90deg)">
@@ -30,7 +30,7 @@
                               fill="#212121"/>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
                          style="transform: rotate(90deg)">
@@ -42,7 +42,7 @@
                               fill="black"/>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
                          style="transform: rotate(90deg)">
@@ -266,7 +266,7 @@
                 <p class="contacts__description">Любым удобным для вас
                     способом:</p>
                 <div class="contacts__icons">
-                    <a href="#">
+                    <a href="https://www.facebook.com/" target="_blank">
                         <svg width="30px" height="30px" viewBox="0 0 20 20"
                              fill="none"
                              xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +275,7 @@
                                   fill="black"/>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://web.telegram.org/k/" target="_blank">
                         <svg width="30" height="30" viewBox="0 0 30 30"
                              fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -283,7 +283,7 @@
                                   fill="black"/>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <svg width="30px" height="30px" viewBox="0 0 20 20"
                              fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -305,21 +305,23 @@
                             <input id="name" name="name" placeholder="Иван"
                                    type="text"
                                    class="input"/>
+                            <div class="error-message" id="name-error"></div>
                         </div>
 
                         <div class="input-container">
                             <label for="email" class="label">Ваша почта</label>
                             <input id="email" name="email" type="email"
                                    class="input"/>
+                            <div class="error-message" id="email-error"></div>
                         </div>
                     </div>
-
 
                     <div class="input-container">
                         <label for="message" class="label">Ваше
                             сообщение</label>
                         <textarea id="message" name="message" rows="5" cols="33"
                                   class="input textarea__input"></textarea>
+                        <div class="error-message" id="message-error"></div>
                     </div>
                     <div class="checkbox-container">
                         <input type="checkbox" id="agree" name="agree"/>
@@ -327,6 +329,7 @@
                             <a
                                     href="#">с политикой
                                 конфиденциальности</a></label>
+                        <div class="error-message" id="agree-error"></div>
                     </div>
                     <button type="submit"
                             class="primary__button submit__button">Отправить
@@ -338,8 +341,6 @@
     </section>
 
 </main>
-<script src="scripts/header.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/footer.js"></script>
+<script src="scripts/formValidation.js"></script>
 </body>
 </html>

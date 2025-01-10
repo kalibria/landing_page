@@ -86,6 +86,16 @@
     display: none;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+    display: none;
+}
+.input.invalid {
+    border-color: red;
+}
+
 @media (min-width: 320px) {
     .contacts__content-container {
         border-top: none;
