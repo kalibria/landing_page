@@ -1,0 +1,147 @@
+.usefulness {
+    display: flex;
+    justify-content: center;
+}
+
+.usefulness__content-container {
+    border-bottom: none;
+    border-top: none;
+}
+
+.usefulness__content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    z-index: 1;
+}
+
+.usefulness__circle-container {
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.subtitle::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 165, 1, 1);
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.usefulness__table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    margin-top: 55px;
+}
+
+.table__container {
+    border-left: 1px solid rgba(0, 0, 0, 1);
+    padding-left: 43px;
+    position: relative;
+}
+
+.table__container::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 165, 1, 1);
+    position: absolute;
+    left: -8px;
+}
+
+.table__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 35px;
+    margin-bottom: 45px;
+}
+
+.table__column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.column__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.decoration-container {
+    display: flex;
+    position: relative;
+    gap: 62px;
+}
+
+.decoration::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    left: -43px;
+    top: 14px;
+}
+
+.decoration::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 165, 1, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    z-index: -1;
+}
+
+
+@media (min-width: 320px) {
+    .subtitle {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .subtitle::after {
+        margin-top: 50px;
+    }
+
+    .usefulness__table {
+        margin-top: 85px;
+    }
+
+    .usefulness__table {
+        margin-right: 65px;
+        margin-left: 65px;
+    }
+}

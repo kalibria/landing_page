@@ -1,3 +1,7 @@
+.content-container {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .webDeveloper {
     background-position: 58%;
     width: 100vw;
@@ -6,28 +10,26 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 .webDeveloper__name {
     font-size: 16px;
     font-weight: 700;
-    padding-bottom: 9px;
+    padding-left: 13px;
     line-height: 24px;
     z-index: 1;
-    position: absolute;
-    left: 12px;
-    top: -12px;
 }
 
-.webDeveloper__circle-container {
+.circle-container {
     position: relative;
     display: flex;
     align-items: center;
     background-color: transparent;
 }
 
-.webDeveloper__circle-container::before {
+.circle-container::before {
     content: '';
     display: block;
     width: 36px;
@@ -99,10 +101,31 @@
     right: 0;
 }
 
+.socialNetworks__container {
+    display: none;
+}
+.socialNetworks {
+    display: none;
+}
+
+.column__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.column__title span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 @media (min-width: 320px) {
     .webDeveloper {
-        height: 800px;
         background-position: 58%;
     }
 
@@ -110,41 +133,31 @@
         font-size: 48px;
         font-weight: 700;
         line-height: 60px;
-        max-width: 532px;
+
     }
 
     .content-container {
-        position: relative;
-
-    }
-
-    .content-container::before,
-    .content-container::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 1px;
+        width: 80%;
+        max-width: 1140px;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.2);
-        top: 0;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: transparent;
         z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0;
     }
 
-    .content-container::before {
-        left: 50%;
-        transform: translateX(-570px);
+    .webDeveloper__content-container {
+        border-bottom: none;
     }
 
-    .content-container::after {
-        left: 50%;
-        transform: translateX(570px);
-    }
 
     .webDeveloper__description {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-570px);
+        max-width: 532px;
     }
+
 
     .socialNetworks {
         display: flex;
@@ -153,7 +166,9 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
-        position: relative;
+
+        position: absolute;
+        left: -117px;
     }
 
     .socialNetworks__icons {
