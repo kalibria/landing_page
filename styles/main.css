@@ -72,6 +72,10 @@
     right: 20px;
 }
 
+.burgerMenu-container:hover {
+    cursor: pointer;
+}
+
 .burgerMenu {
     width: 36px;
     height: 3px;
@@ -122,6 +126,35 @@
     flex-direction: column;
 }
 
+/* Стили для крестика */
+.burgerMenu.active {
+    background-color: transparent;
+}
+
+.burgerMenu.active::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burgerMenu.active::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Стили для меню */
+.menuWindow {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none; /* Скрыто по умолчанию */
+}
+
+.menuWindow.open {
+    display: block; /* Показываем окно */
+}
+
 
 
 @media (min-width: 320px) {
@@ -145,7 +178,6 @@
         z-index: 1;
         display: flex;
         align-items: center;
-        /*justify-content: left;*/
         padding: 0;
     }
 
