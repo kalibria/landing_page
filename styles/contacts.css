@@ -1,3 +1,7 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+}
 .contacts__title {
     padding-left: 12px;
 }
@@ -20,7 +24,30 @@
     gap: 25px;
 }
 
-.input {
+
+.contacts__circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.contacts__circle::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 165, 1, 1);
+    position: absolute;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
     width: 100%;
     height: 45px;
     border: 1px solid rgba(0, 0, 0, 1);
@@ -32,7 +59,7 @@
     line-height: 18px;
 }
 
-.label {
+.form__label {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
@@ -43,17 +70,17 @@
     padding: 5px;
 }
 
-.input-container {
+.form__field {
     position: relative;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.textarea__input {
+.form__textarea {
     height: 143px;
 }
 
-.checkbox-container {
+.form__checkbox {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -66,7 +93,7 @@
     width: 220px;
 }
 
-.submit__button {
+.form__button {
     width: 219px;
     height: 45px;
     font-size: 14px;
@@ -77,12 +104,7 @@
     margin-bottom: 50px;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-container {
+.contacts__image {
     display: none;
 }
 
@@ -92,12 +114,12 @@
     margin-top: 4px;
     display: none;
 }
-.input.invalid {
+.form__input.invalid {
     border-color: red;
 }
 
 @media (min-width: 320px) {
-    .contacts__content-container {
+    .contacts__content {
         border-top: none;
         display: flex;
         padding-left: 52px;
@@ -114,24 +136,24 @@
         margin-top: 30px;
     }
 
-    .image-container {
+    .contacts__image {
         display: block;
         margin-right: 68px;
     }
 
-    .inputs--connected {
+    .form__fields {
         display: flex;
         gap: 15px;
     }
 
-    .contacts-container {
+    .contacts__info {
         flex-grow: 1;
     }
 
-    .checkbox-container {
+    .form__checkbox {
         display: none;
     }
-    .submit__button {
+    .form__button {
         align-self: normal;
     }
 }

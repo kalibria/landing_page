@@ -20,10 +20,10 @@
 <header class="header">
 </header>
 <main class="main">
-    <section class="webDeveloper">
-        <div class="socialNetworks">
-            <p>Социальные сети</p>
-            <div class="socialNetworks__icons">
+    <section class="developer">
+        <div class="social">
+            <p class="social__title">Социальные сети</p>
+            <div class="social__icons">
                 <a href="https://github.com/" target="_blank">
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                          xmlns="http://www.w3.org/2000/svg"
@@ -55,27 +55,27 @@
             </div>
         </div>
 
-        <div class="content-container webDeveloper__content-container">
+        <div class="content-container developer__content">
             <div class="burgerMenu-container">
                 <div class="burgerMenu"></div>
             </div>
-            <div class="menuWindow__container">
-                <div class="menuWindow">
-                    <div class="closeWindow">
+            <div class="menu">
+                <div class="menu__window">
+                    <button class="menu__close">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" >
                             <path d="M17.1568 14.4999L28.4489 3.20755C29.1837 2.47303 29.1837 1.28541 28.4489 0.550891C27.7144 -0.18363 26.5267 -0.18363 25.7922 0.550891L14.4998 11.8433L3.20781 0.550891C2.47295 -0.18363 1.28567 -0.18363 0.551149 0.550891C-0.183716 1.28541 -0.183716 2.47303 0.551149 3.20755L11.8432 14.4999L0.551149 25.7923C-0.183716 26.5268 -0.183716 27.7144 0.551149 28.449C0.917206 28.8154 1.39852 28.9994 1.87948 28.9994C2.36045 28.9994 2.84141 28.8154 3.20781 28.449L14.4998 17.1566L25.7922 28.449C26.1586 28.8154 26.6396 28.9994 27.1205 28.9994C27.6015 28.9994 28.0825 28.8154 28.4489 28.449C29.1837 27.7144 29.1837 26.5268 28.4489 25.7923L17.1568 14.4999Z" fill="black"/>
                         </svg>
-                    </div>
-                    <ul class="list">
-                        <li><a href="#link1">ПРО МЕНЯ</a></li>
-                        <li><a href="#link2">МОЙ ОПЫТ</a></li>
-                        <li><a href="#link3">МОИ НАВЫКИ</a></li>
-                        <li><a href="#link3">МОИ РАБОТЫ</a></li>
-                        <li><a href="#link3">ПРАЙС-ЛИСТ</a></li>
-                        <li><a href="#link3">КОНТАКТЫ</a></li>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#link1" class="menu__link">ПРО МЕНЯ</a></li>
+                        <li class="menu__item"><a href="#link2" class="menu__link">МОЙ ОПЫТ</a></li>
+                        <li class="menu__item"><a href="#link3" class="menu__link">МОИ НАВЫКИ</a></li>
+                        <li class="menu__item"><a href="#link3" class="menu__link">МОИ РАБОТЫ</a></li>
+                        <li class="menu__item"><a href="#link3" class="menu__link">ПРАЙС-ЛИСТ</a></li>
+                        <li class="menu__item"><a href="#link3" class="menu__link">КОНТАКТЫ</a></li>
                     </ul>
 
-                    <div class="menuWindow__contact-icons">
+                    <div class="menu__contacts">
                         <a href="https://www.facebook.com/" target="_blank">
                             <svg width="20px" height="20px" viewBox="0 0 20 20"
                                  fill="none"
@@ -109,30 +109,30 @@
                 </div>
             </div>
 
-            <div class="webDeveloper__description">
-                <div class="circle-container">
-                    <p class="webDeveloper__name">Меня зовут Александра Смит</p>
+            <div class="developer__description">
+                <div class="contacts__circle">
+                    <p class="developer__name">Меня зовут Александра Смит</p>
                 </div>
-                <h1 class="webDeveloper__profession">Я web-разработчик
+                <h1 class="developer__profession">Я web-разработчик
                     из города Москва</h1>
-                <button class="primary__button button">Портфолио</button>
+                <button class="button button--primary ">Портфолио</button>
                 <button class="button button--outlined">Про меня</button>
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="usefulness">
         <div class="content-container usefulness__content-container">
             <div class="usefulness__content">
-                <div class="circle-container usefulness__circle-container">
-                    <p class="title">Опыт</p>
+                <div class="contacts__circle usefulness__circle-container">
+                    <p class="section__title">Опыт</p>
                 </div>
-                <h2 class="subtitle">Чем я буду полезна</h2>
+                <h2 class="section__subtitle">Чем я буду полезна</h2>
                 <div class="usefulness__table">
-                    <div class="table__container">
+                    <div class="table">
                         <h3 class="table__title">Образование</h3>
 
-                        <div class="table__column">
-                            <div class="decoration-container">
+                        <div class="table__item">
+                            <div class="table__decoration">
                                 <div class="decoration">
                                     <svg width="21" height="25"
                                          viewBox="0 0 21 25" fill="none"
@@ -142,11 +142,11 @@
                                               fill="black"/>
                                     </svg>
                                 </div>
-                                <p class="column__title"><span>МГТУ им. Н. Э. Баумана</span>Диплом
+                                <p class="table__text"><span>МГТУ им. Н. Э. Баумана</span>Диплом
                                     магистра |
                                     Москва (2014-2020)</p>
                             </div>
-                            <p class="column__description">Lorem ipsum dolor sit
+                            <p class="table__description">Lorem ipsum dolor sit
                                 amet, consectetur
                                 adipiscing
                                 elit,
@@ -156,8 +156,8 @@
                                 consectetur
                                 adipiscing elit, sed do eiusmo. </p>
 
-                            <div class="table__column">
-                                <div class="decoration-container">
+                            <div class="table__item">
+                                <div class="table__decoration">
                                     <div class="decoration">
                                         <svg width="25" height="24"
                                              viewBox="0 0 25 24" fill="none"
@@ -181,12 +181,12 @@
 
 
                                     </div>
-                                    <p class="column__title"><span>Udemy</span>Курсы
+                                    <p class="table__text"><span>Udemy</span>Курсы
                                         по Web-разработке
                                     </p>
                                 </div>
 
-                                <p class="column__description">Lorem ipsum dolor
+                                <p class="table__description">Lorem ipsum dolor
                                     sit amet, consectetur
                                     adipiscing
                                     elit,
@@ -200,10 +200,10 @@
                         </div>
                     </div>
 
-                    <div class="table__container">
+                    <div class="table">
                         <h3 class="table__title">Опыт работы</h3>
-                        <div class="table__column">
-                            <div class="decoration-container">
+                        <div class="table__item">
+                            <div class="table__decoration">
                                 <div class="decoration">
                                     <svg width="25" height="25"
                                          viewBox="0 0 25 25" fill="none"
@@ -241,14 +241,14 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="column__title">
+                                <p class="table__text">
                                     <span>Front-End Developer</span>EPAM |
                                     Москва
                                     (2018-2019)
                                 </p>
                             </div>
 
-                            <p class="column__description">Lorem ipsum dolor sit
+                            <p class="table__description">Lorem ipsum dolor sit
                                 amet, consectetur
                                 adipiscing
                                 elit,
@@ -259,8 +259,8 @@
                                 consectetur
                                 adipiscing elit, sed do eiusmo. </p>
                         </div>
-                        <div class="table__column">
-                            <div class="decoration-container">
+                        <div class="table__item">
+                            <div class="table__decoration">
                                 <div class="decoration">
                                     <svg width="25" height="25"
                                          viewBox="0 0 25 25" fill="none"
@@ -280,7 +280,7 @@
                                               fill="black"/>
                                     </svg>
                                 </div>
-                                <p class="column__title">
+                                <p class="table__text">
                                     <span>UI/UX Designer</span>Squad
                                     Team |
                                     Москва
@@ -288,7 +288,7 @@
                                 </p>
                             </div>
 
-                            <p class="column__description">Lorem ipsum dolor sit
+                            <p class="table__description">Lorem ipsum dolor sit
                                 amet, consectetur
                                 adipiscing
                                 elit,
@@ -304,16 +304,16 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="content-container contacts__content-container">
-            <div class="image-container">
+    <section class="contacts">
+        <div class="content-container contacts__content">
+            <div class="contacts__image">
                 <img src="./images/Photo.png" alt="myPhoto"/>
             </div>
-            <div class="contacts-container">
-                <div class="circle-container">
-                    <p class="title contacts__title">Контакты</p>
+            <div class="contacts__info">
+                <div class="contacts__circle">
+                    <p class="section__title contacts__title">Контакты</p>
                 </div>
-                <h2 class="subtitle contacts_subtitle">Свяжитесь со мной</h2>
+                <h2 class="section__subtitle contacts_subtitle">Свяжитесь со мной</h2>
                 <p class="contacts__description">Любым удобным для вас
                     способом:</p>
                 <div class="contacts__icons">
@@ -349,33 +349,34 @@
                 </div>
                 <p class="contacts__description">Или оставьте ваши данные и я
                     сама вам напишу:</p>
+
                 <form class="form">
-                    <div class="inputs--connected">
-                        <div class="input-container">
-                            <label for="name" class="label">Ваше имя</label>
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label for="name" class="form__label">Ваше имя</label>
                             <input id="name" name="name" placeholder="Иван"
                                    type="text"
-                                   class="input"/>
+                                   class="form__input" required/>
                             <div class="error-message" id="name-error"></div>
                         </div>
 
-                        <div class="input-container">
-                            <label for="email" class="label">Ваша почта</label>
+                        <div class="form__field">
+                            <label for="email" class="form__label">Ваша почта</label>
                             <input id="email" name="email" type="email"
-                                   class="input"/>
+                                   class="form__input" required/>
                             <div class="error-message" id="email-error"></div>
                         </div>
                     </div>
 
-                    <div class="input-container">
-                        <label for="message" class="label">Ваше
+                    <div class="form__field">
+                        <label for="message" class="form__label">Ваше
                             сообщение</label>
                         <textarea id="message" name="message" rows="5" cols="33"
-                                  class="input textarea__input"></textarea>
+                                  class="form__input form__textarea"></textarea>
                         <div class="error-message" id="message-error"></div>
                     </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="agree" name="agree"/>
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="agree" name="agree" required/>
                         <label for="agree" class="checkbox__label">Я согласен(а)
                             <a
                                     href="#">с политикой
@@ -383,7 +384,7 @@
                         <div class="error-message" id="agree-error"></div>
                     </div>
                     <button type="submit"
-                            class="primary__button submit__button">Отправить
+                            class="button--primary form__button">Отправить
                         сообщение
                     </button>
                 </form>

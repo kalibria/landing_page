@@ -84,7 +84,7 @@ function clearErrors() {
         error.textContent = '';
         error.style.display = 'none';
     });
-    document.querySelectorAll('.input').forEach((input) => {
+    document.querySelectorAll('.form__input').forEach((input) => {
         input.classList.remove('invalid');
     });
 }

@@ -1,8 +1,7 @@
-.section {
+.usefulness{
     display: flex;
     justify-content: center;
 }
-
 .usefulness__content-container {
     border-bottom: none;
     border-top: none;
@@ -16,7 +15,7 @@
     align-items: center;
 }
 
-.title {
+.section__title {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -27,7 +26,7 @@
     justify-content: center;
 }
 
-.subtitle {
+.section__subtitle {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
@@ -35,7 +34,7 @@
     position: relative;
 }
 
-.subtitle::after {
+.section__subtitle::after {
     content: "";
     display: block;
     width: 60px;
@@ -55,13 +54,13 @@
     margin-top: 55px;
 }
 
-.table__container {
+.table {
     border-left: 1px solid rgba(0, 0, 0, 1);
     padding-left: 43px;
     position: relative;
 }
 
-.table__container::before {
+.table::before {
     content: '';
     display: block;
     width: 15px;
@@ -70,6 +69,19 @@
     background-color: rgba(255, 165, 1, 1);
     position: absolute;
     left: -8px;
+}
+.table__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.table__text span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
 }
 
 .table__title {
@@ -80,20 +92,20 @@
     margin-bottom: 45px;
 }
 
-.table__column {
+.table__item {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.column__description {
+.table__description {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     margin-top: 10px;
 }
 
-.decoration-container {
+.table__decoration {
     display: flex;
     position: relative;
     gap: 62px;
@@ -125,13 +137,13 @@
 
 
 @media (min-width: 320px) {
-    .subtitle {
+    .section__subtitle {
         font-size: 36px;
         font-weight: 700;
         line-height: 60px;
     }
 
-    .subtitle::after {
+    .section__subtitle::after {
         margin-top: 50px;
     }
 
