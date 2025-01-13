@@ -1,7 +1,7 @@
 .usefulness{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 .usefulness__content-container {
     border-bottom: none;
@@ -138,7 +138,7 @@
 }
 
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
     .section__subtitle {
         font-size: 36px;
         font-weight: 700;
@@ -158,3 +158,5 @@
         margin-left: 65px;
     }
 }
+
+

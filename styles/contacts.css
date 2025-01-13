@@ -107,6 +107,11 @@
 
 .contacts__image {
     display: none;
+    margin-bottom: 20px;
+}
+
+.contacts__image img {
+    max-width: 100%;
 }
 
 .error-message {
@@ -119,7 +124,7 @@
     border-color: red;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
     .contacts__content {
         border-top: none;
         display: flex;
