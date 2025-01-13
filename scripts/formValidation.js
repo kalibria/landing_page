@@ -7,42 +7,35 @@ document.querySelector('.form').addEventListener('submit', function (e) {
 
     let isValid = true;
 
-    // Очистка предыдущих ошибок
     clearErrors();
 
-    // Валидация имени
     if (nameInput.value.trim() === '') {
         showError('name', 'Пожалуйста, введите ваше имя.');
         isValid = false;
     }
 
-    // Валидация email
     if (!validateEmail(emailInput.value)) {
         showError('email', 'Введите корректный email.');
         isValid = false;
     }
 
-    // Валидация сообщения
     if (messageInput.value.trim() === '') {
         showError('message', 'Сообщение не должно быть пустым.');
         isValid = false;
     }
 
-    // Валидация согласия с политикой
     if (!agreeCheckbox.checked) {
         showError('agree', 'Вы должны согласиться с политикой конфиденциальности.');
         isValid = false;
     }
 
     if (isValid) {
-        // Пример запроса на сервер
         const formData = {
             name: nameInput.value,
             email: emailInput.value,
             message: messageInput.value,
         };
 
-        // Используем Fake JSON API
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             headers: {

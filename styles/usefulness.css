@@ -1,6 +1,7 @@
 .usefulness{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .usefulness__content-container {
     border-bottom: none;
@@ -13,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section__title {

@@ -1,6 +1,7 @@
 .contacts {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .contacts__title {
     padding-left: 12px;
@@ -122,6 +123,7 @@
     .contacts__content {
         border-top: none;
         display: flex;
+        flex-wrap: wrap;
         padding-left: 52px;
         align-items: flex-start;
         justify-content: normal;

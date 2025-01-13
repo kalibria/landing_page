@@ -4,13 +4,15 @@
 }
 
 .developer {
-    background-position: 58%;
     width: 100vw;
     height: 100vh;
     background-image: url('../images/Background.png');
     background-size: cover;
+    background-position: 58%;
+
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
 }
@@ -159,6 +161,7 @@
 }
 
 .menu__close {
+    background-color: transparent;
     align-self: end;
 }
 
